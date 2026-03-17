@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio showcasing my work as a **Backend Engineer, Startup Builder, and AI-focused system developer**.
 
-🔗 **Live Website:** https://your-netlify-link
+🔗 **Live Website:** [https://your-netlify-link](https://abinash-nayak-portfolio.netlify.app/)
 📂 **GitHub Profile:** https://github.com/Aj-world
 
 ---
