@@ -1,33 +1,32 @@
-/* =====================================================
-   Animations JS
-   Visual effects only
-   ===================================================== */
+const applyRevealAnimations = () => {
+  const items = document.querySelectorAll("[data-reveal]");
+  if (!items.length) return;
 
-document.addEventListener("DOMContentLoaded", () => {
-  initScrollReveal();
-});
+  if (
+    !("IntersectionObserver" in window) ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    items.forEach(item => item.classList.add("is-visible"));
+    return;
+  }
 
-/* ---------- Scroll Reveal Animation ---------- */
-function initScrollReveal() {
-  const revealItems = document.querySelectorAll(
-    ".section, .service-card, .portfolio-card, .skill-group"
-  );
-
-  if (!("IntersectionObserver" in window)) return;
+  items.forEach((item, index) => {
+    item.style.transitionDelay = `${Math.min(index * 50, 220)}ms`;
+  });
 
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("reveal");
+          entry.target.classList.add("is-visible");
           observer.unobserve(entry.target);
         }
       });
     },
-    {
-      threshold: 0.15
-    }
+    { threshold: 0.16 }
   );
 
-  revealItems.forEach(item => observer.observe(item));
-}
+  items.forEach(item => observer.observe(item));
+};
+
+document.addEventListener("sections:loaded", applyRevealAnimations);

@@ -1,47 +1,122 @@
-/* ===== LAYOUT ===== */
-
-main {
-  overflow-x: hidden;
-}
-#top {
-  padding-top: 120px;
-}
-
 section {
   position: relative;
 }
 
+main > section + section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+#top {
+  padding-top: 132px;
+}
+
 .section-title {
+  max-width: 760px;
+  margin: 0 auto 52px;
   text-align: center;
-  margin-bottom: 48px;
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-title h2,
+.hero-copy h1,
+.future-copy h2 {
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .section-title h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  font-weight: 800;
 }
 
 .section-title p {
-  max-width: 640px;
-  margin: 12px auto 0;
+  margin-top: 16px;
+  font-size: 1.02rem;
 }
 
-/* Grid helpers */
-.grid-2 {
+.hero-shell,
+.about-grid,
+.building-layout,
+.contact-layout,
+.future-shell {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skills-grid,
+.capability-grid,
+.project-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.skills-grid,
+.capability-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 96px 0 auto;
+  height: 520px;
+  background:
+    radial-gradient(circle at 15% 20%, var(--hero-orb-a), transparent 30%),
+    radial-gradient(circle at 85% 15%, var(--hero-orb-b), transparent 28%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 @media (max-width: 992px) {
-  .grid-2,
-  .grid-3 {
+  .hero-shell,
+  .about-grid,
+  .building-layout,
+  .contact-layout,
+  .future-shell,
+  .skills-grid,
+  .capability-grid,
+  .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  #top {
+    padding-top: 116px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  main > section + section::before {
+    left: 18px;
+    right: 18px;
   }
 }
