@@ -1,116 +1,122 @@
-# 🌐 Personal Portfolio — Abinash Nayak
+ # 🌐 Abinash Nayak — Backend Engineer Portfolio
 
-A modern, responsive developer portfolio showcasing my work as a **Backend Engineer, Startup Builder, and AI-focused system developer**.
+A backend-focused developer portfolio showcasing my work in **scalable system design, microservices architecture, and AI-integrated applications**.
 
-🔗 **Live Website:** [https://your-netlify-link](https://abinash-nayak-portfolio.netlify.app/)
-📂 **GitHub Profile:** https://github.com/Aj-world
+🔗 **Live:** https://abinash-nayak-portfolio.netlify.app/
+📂 **GitHub:** https://github.com/Aj-world
 
 ---
 
-## 🚀 About This Portfolio
+## 🚀 Overview
 
-This portfolio is designed to present my work in **backend engineering, system design, and startup product development**.
+This portfolio represents my journey as a **backend engineer building real-world systems**, not just UI projects.
 
 It highlights:
 
-* Real-world backend projects
-* Microservices architecture experience
-* Startup project (Atlas Vertical OS)
-* AI integration direction
+* Backend-driven project architecture
+* Microservices-based system design
+* Startup product development (**Vertical Atlas OS**)
+* Exploration of AI integration in backend systems
 
 ---
 
-## 🧠 What It Represents
+## 🧠 Engineering Philosophy
 
-This is not just a portfolio website — it reflects:
+I focus on:
 
-* Backend-first engineering approach
-* System design thinking
-* Startup-level execution mindset
-* Focus on building scalable and maintainable systems
-
----
-
-## ✨ Key Features
-
-* 📱 Fully responsive design (mobile + desktop)
-* 🎨 Clean and modern UI/UX
-* ⚡ Fast static website (optimized performance)
-* 🧩 Section-based architecture for maintainability
-* 🌙 Light/Dark mode support
-* 🎯 Focused project showcase
+* Building **scalable and maintainable backend systems**
+* Designing **real-world architectures**, not just demos
+* Learning through **product development, not tutorials**
+* Combining **backend engineering with AI capabilities**
 
 ---
 
-## 🧩 Sections Included
+## 🏗️ Featured Work
 
-* **Hero** → Backend Engineer + Startup identity
-* **About** → Experience and approach
-* **Currently Building** → Atlas Vertical OS
-* **Skills** → Backend + system design stack
-* **AI Focus** → Future direction
-* **Projects** → Key work highlights
-* **Contact** → Direct communication
+### 🔹 Vertical Atlas OS (In Progress)
+
+A startup-level system designed with:
+
+* Microservices architecture (Spring Boot)
+* Modular service design
+* Scalable backend infrastructure
+* Future AI integration layer
 
 ---
 
-## 💻 Tech Stack
+## ⚙️ Technical Focus
 
-* HTML5
-* CSS3 (Custom + Bootstrap)
-* JavaScript (Vanilla)
+### Backend
+
+* Java
+* Spring Boot
+* REST API Design
+* Microservices Architecture
+
+### System Design
+
+* Service decomposition
+* API gateway patterns
+* Scalable architecture thinking
+
+### Frontend (Supportive)
+
+* HTML5, CSS3, JavaScript
+* Responsive UI
+
+---
+
+## ✨ Portfolio Features
+
+* 📱 Fully responsive UI
+* ⚡ Fast static delivery (Netlify)
+* 🧩 Modular section-based structure
+* 🌙 Dark mode support
+* 🎯 Backend-focused project presentation
 
 ---
 
 ## 📂 Project Structure
 
-```bash
 assets/
-  ├── css/
-  ├── js/
-  └── images/
+├── css/
+├── js/
+└── images/
 
 sections/
-  ├── header.html
-  ├── hero.html
-  ├── about.html
-  ├── skills.html
-  ├── portfolio.html
-  ├── contact.html
-  └── ...
-```
+├── hero.html
+├── about.html
+├── skills.html
+├── portfolio.html
+└── contact.html
 
 ---
 
-## 🛠️ How to Run Locally
+## 🛠️ Run Locally
 
-```bash
 git clone https://github.com/Aj-world/portfolio-webpage.git
 cd portfolio-webpage
-```
 
-👉 Open `index.html` in your browser
+Open index.html in your browser
 
 ---
 
-## 📌 Deployment
+## 🚀 Deployment
 
-This portfolio is deployed using **Netlify** with automatic deployment from GitHub.
+Deployed using **Netlify** with continuous deployment from GitHub.
 
 ---
 
 ## 👨‍💻 Author
 
-**Abinash Nayak**
-Backend Developer | Java | Spring Boot | Microservices
+Abinash Nayak
+Backend Engineer | System Design Enthusiast | AI Integration
 
-* GitHub: https://github.com/Aj-world
-* Email: [abinash.tech.ai@gmail.com](mailto:abinash.tech.ai@gmail.com)
+📧 [abinash.tech.ai@gmail.com](mailto:abinash.tech.ai@gmail.com)
+🔗 https://github.com/Aj-world
 
 ---
 
 ## 📄 License
 
-This project is open-source under the **MIT License**.
-
----
+MIT License
