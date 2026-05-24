@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://abinash-nayak-portfolio.netlify.app/sitemap.xml
